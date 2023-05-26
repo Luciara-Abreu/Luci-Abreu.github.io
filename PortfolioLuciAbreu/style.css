@@ -1,0 +1,207 @@
+html, body  {
+  background: rgb(202, 194, 194);
+  height: 169%;
+}
+.container {
+  min-height: 100%;
+  padding-bottom: 100px; /* Espaço para o footer */
+}
+
+#title{
+  padding-bottom: 15%;
+}
+
+.left-side {
+  float: left; 
+  width: 25%; 
+  min-height: 300.7vh;
+  position: relative;
+  box-sizing: border-box;
+  background:#0a6d7a;
+  color: aliceblue;
+}
+
+.right-side {
+  float: right;
+  width: 75%;
+  min-height: 285vh;
+  position: relative;
+  padding: 3%; 
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+.foto-e-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+}
+.minha-foto{
+  border-radius: 50%;
+  width: 150px; 
+  padding-top: 8%;
+}
+
+.subtitle-perfil, .section-text-perfil, .section-text-graduation, .article-links-caontats, .aside-list-skills{
+  padding: 10% 7% 10% 7%;
+}
+
+.container-perfil, .aritle-contat, .aside-skills{
+  width: 100%;  
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-perfil-graduation{
+  width: 20%;  
+  margin: 0;
+  padding: 0 15% 0 4%;
+}
+
+.p-perfil, .p-contact, .p-skills{
+    width: 20%;  
+    margin: 0;
+    padding: 0 5% 0 4%;
+  }
+
+.linha-horizontal {
+  width: 65%; 
+  float: right;
+  margin: 0;
+  height: 1px;
+
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+
+.graduation, .notebook, .contat-handshake, .skills-piramide{
+  width: 15%; 
+  height: 10;
+  margin: 0;
+  padding: 7% 0 7% 5%;
+}
+
+
+/* Contatos Links e Img*/
+.lista-contato {
+  list-style: none;
+}
+
+.li-fone, .li-whats, .li-mail, .li-git, .li-in{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3% 8% 0 0;
+}
+
+.fone, .whatsapp, .email, .git, .In{
+  width: 20px; 
+  height: 10; 
+  padding: 1% 5% 5% 0;
+}
+
+.a-fone, .a-whatsapp, .a-email, .a-git, .a-In {
+  color: aliceblue;
+  margin: 0;
+  padding: -20% 0 0 0;
+}
+
+/*SOBRE AS SKILLS*/
+.container-skill{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 16%;
+}
+
+.skill {
+  width: 50%;
+  height: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color:rgb(226, 170, 170);
+}
+
+/*WORK EXPERIENCE*/
+.container-works{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 3%;
+}
+
+.social-media{
+  width: 10%; 
+  height: 10; 
+  padding: 0;
+}
+.p-perfil-Work{
+  width: 50%;  
+  margin: 0;
+  padding: 0 0 0 1%;
+}
+
+.flag{
+  width: 10%; 
+  height: 10; 
+  padding: 3% 0 0 0;
+}
+.container-courses{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 3%;
+}
+
+/* Estilizando o botão do Slick Carousel */
+.slick-prev,
+.slick-next {
+  background-color: #0a6d7a;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  transform: scale(1.1);
+}
+  
+.footer-final{
+  width: 100vh;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: 2%; /* Defina a altura desejada para o footer */
+  background-color: #333;
+  color:#f2f2f2;
+  box-sizing: border-box;
+}
+
+.p-footer{
+  padding: 0 0 0 30%;
+  margin: 0;
+}
