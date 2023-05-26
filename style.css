@@ -1,10 +1,12 @@
 html, body  {
   background: rgb(202, 194, 194);
-  height: 169%;
+  height: 100%; /* Definir altura de html e body como 100% */
+  margin: 0;
+  padding: 0;
 }
 .container {
-  min-height: 100%;
-  padding-bottom: 100px; /* Espaço para o footer */
+  min-height: 100vh; /* Definir a altura mínima do container como 100% da altura da viewport */
+  padding-bottom: 98%; /* Espaço para o footer */
 }
 
 #title{
@@ -14,7 +16,7 @@ html, body  {
 .left-side {
   float: left; 
   width: 25%; 
-  min-height: 300.7vh;
+  height: auto;
   position: relative;
   box-sizing: border-box;
   background:#0a6d7a;
@@ -24,10 +26,10 @@ html, body  {
 .right-side {
   float: right;
   width: 75%;
-  min-height: 285vh;
-  position: relative;
   padding: 3%; 
   margin: 0;
+  height: auto;
+  position: relative;
   box-sizing: border-box; 
 }
 
@@ -190,18 +192,14 @@ html, body  {
   transform: scale(1.1);
 }
   
-.footer-final{
-  width: 100vh;
-  bottom: 0;
-  left: 0;
-  width: auto;
-  height: 2%; /* Defina a altura desejada para o footer */
+.footer{
+  height: 30px;
   background-color: #333;
-  color:#f2f2f2;
-  box-sizing: border-box;
+  color: #f2f2f2;
+  padding: 0 0 0 30%;
 }
 
 .p-footer{
-  padding: 0 0 0 30%;
+  padding: 0;
   margin: 0;
 }
