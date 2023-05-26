@@ -5,7 +5,7 @@ html, body  {
   padding: 0;
 }
 .container {
-  min-height: 100vh; /* Definir a altura mínima do container como 100% da altura da viewport */
+  min-height: 99.7vh; /* Definir a altura mínima do container como 100% da altura da viewport */
   padding-bottom: 98%; /* Espaço para o footer */
 }
 
