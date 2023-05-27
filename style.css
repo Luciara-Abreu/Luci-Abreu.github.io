@@ -62,8 +62,11 @@ html, body {
 
   /*LADO ESQUERDO  => CURSOS, SKILLS, ... */
   #title{
-    padding-bottom: 15%;
+    padding-bottom: 15%;        
   }
+  
+  /*Fim da firula */
+
   .foto-e-name{
     display: flex;
     flex-direction: column;
@@ -227,6 +230,7 @@ html, body {
 .slick-next:hover {
   transform: scale(1.1);
   }
+  
 }
 
 /* -----------------------------------------------------------------------*/
@@ -278,9 +282,11 @@ html, body {
 
 
     /*Parte Verte-Topo  => CURSOS, SKILLS, ... */
-    #title{
-      padding-bottom: 15%;
-    }
+      #title{
+        padding-bottom: 15%;   
+      }
+      
+
     .foto-e-name{
       display: flex;
       flex-direction: column;
@@ -454,6 +460,7 @@ html, body {
     .slick-next:hover {
     transform: scale(1.1);
     }
+
 }
 
 
