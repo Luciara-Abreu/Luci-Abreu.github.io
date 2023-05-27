@@ -40,10 +40,14 @@ html, body {
   .left-side {
     width: 25%;
     height: auto;
+    background: #0a6d7a;
+    color: aliceblue;
   }
 
   .right-side {
     width: 75%;
+    background: rgb(202, 194, 194);
+    color:black;
   }
 
   .footer {
