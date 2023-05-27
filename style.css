@@ -1,76 +1,103 @@
-html, body  {
-  margin: 0;
+html, body {
   background: rgb(202, 194, 194);
-  height: 174%; /* Definir altura de html e body como 100% */
-}
-.container {
-  width: 100%;
-  height: 99.2%;
-  /* Espaço para o footer */
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-#title{
-  padding-bottom: 15%;
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 0px;
 }
 
 .left-side {
-  float: left; 
-  width: 25%; 
-  height: auto;
-  position: relative;
-  box-sizing: border-box;
-  background:#0a6d7a;
+  width: 100%;
+  background: #0a6d7a;
   color: aliceblue;
 }
 
 .right-side {
-  float: right;
-  margin: 0;
-  width: 75%;
-  height: auto;
-  padding: 3% 3% 0% 3%;
-  position: relative;
-  box-sizing: border-box; 
+  width: 100%;
+  padding: 3%;
 }
 
-.foto-e-name{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%; 
-}
-.minha-foto{
-  border-radius: 50%;
-  width: 150px; 
-  padding-top: 8%;
+.footer {
+  margin-top: auto;
+  height: 30px;
+  background-color: #333;
+  color: #f2f2f2;
+  padding: 0 0 0 30%;
 }
 
-.subtitle-perfil, .section-text-perfil, .section-text-graduation, .article-links-caontats, .aside-list-skills{
-  padding: 5% 7% 5% 7%;
-}
-
-.container-perfil, .aritle-contat, .aside-skills, .article-courses{
-  width: 100%;  
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.p-perfil-graduation{
-  width: 29%;  
-  margin: 0;
-  padding: 0 5% 0 4%;
-}
-
-.p-perfil, .p-contact, .p-skills{
-    width: 20%;  
-    margin: 0;
-    padding: 0 5% 0 4%;
+/* Estilos responsivos */
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Alteramos para uma direção de linha para exibir o conteúdo lado a lado */
   }
 
+  .left-side {
+    width: 25%;
+    height: auto;
+  }
+
+  .right-side {
+    width: 75%;
+  }
+
+  .footer {
+    padding: 0;
+    text-align: center;
+  }
+
+  .p-footer{
+    padding: 0;
+    margin: 0;
+  } 
+
+
+  /*LADO ESQUERDO  => CURSOS, SKILLS, ... */
+  .container-perfil, .aritle-contat, .aside-skills, .article-courses{
+    width: 100%;  
+    margin: 0;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .p-perfil, .p-contact, .p-skills, .p-perfil-graduation{
+    width: 29%;  
+    margin: 0;
+    padding: 0 13% 0 4%;
+  }
+
+  .subtitle-perfil, .section-text-perfil, .section-text-graduation, .article-links-contats, .aside-list-skills{
+    padding: 5% 7% 5% 7%;
+  }
+
+  /* Contatos Links e Img*/
+.lista-contato {
+  list-style: none;
+  padding: 0;
+}
+
+  /*LADO DIREITO => WORK EXPERIENCE*/
+.container-works, .article-courses{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 3%;
+}
+
+.p-perfil-Work, .p-courses{
+  width: 35%;  
+  margin: 0;
+  padding: 0 0 0 3%; 
+}
+
 .linha-horizontal {
-  width: 65%; 
+  width: 45%; 
   float: right;
   margin: 0;
   height: 1px;
@@ -86,17 +113,27 @@ html, body  {
   border-width: 1px;
 }
 
+}
+
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.minha-foto{
+  border-radius: 50%;
+  width: 150px; 
+  padding-top: 8%;
+}
+
 .graduation, .notebook, .contat-handshake, .skills-piramide{
   width: 15%; 
   height: 10;
   margin: 0;
   padding: 3% 0 3% 5%;
-}
-
-
-/* Contatos Links e Img*/
-.lista-contato {
-  list-style: none;
 }
 
 .li-fone, .li-whats, .li-mail, .li-git, .li-in{
@@ -119,76 +156,10 @@ html, body  {
   padding: -20% 0 0 0;
 }
 
-/*SOBRE AS SKILLS*/
-.container-skill{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-}
-
-.skill {
-  width: 50%;
-  height: 10px;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.skill-progress {
-  height: 100%;
-  background-color:rgb(226, 170, 170);
-}
-
-/*WORK EXPERIENCE*/
-.container-works{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-bottom: 3%;
-}
-
-.social-media{
+.social-media, .flag{
   width: 10%; 
   height: 20%; 
 }
-
-.courses{
-  width: 100%;
-  height: 15%; 
-  background: rgb(202, 194, 194)
-}
-
-.flag{  
-  width: 10%; 
-  height: 550%;
-  padding: 0 0 0 2%;
-  float: left; 
-
-}
-.article-courses{
-  display: flex;
-  align-self: center;
-  width: auto;
-  height: 4%;
-  margin: 0; 
-  padding: 3% 5% 3% 0;
-  background:#0a6d7a;
-  color: aliceblue;
-}
-
-.p-perfil-Work{
-  width: 25%;  
-  margin: 0;
-  padding: 0 0 0 3%; 
-}
-
-.p-courses {
-  width: 20%;
-  margin: 0;
-  padding: 0 3% 0 2%;
-}
-
 
 /* Estilizando o botão do Slick Carousel */
 .slick-prev,
@@ -212,19 +183,14 @@ html, body  {
   color:  #050505;
 }
 
+.slick-slide {
+  margin: 0;
+  padding-bottom: 2px;
+}
+
+
 .slick-prev:hover,
 .slick-next:hover {
   transform: scale(1.1);
 }
   
-.footer{
-  height: auto;
-  background-color: #333;
-  color: #f2f2f2;
-  padding: 0 0 0 30%;
-}
-
-.p-footer{
-  padding: 0;
-  margin: 0;
-}
