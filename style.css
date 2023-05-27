@@ -1,5 +1,4 @@
 html, body {
-  width: 103%;
   background: rgb(202, 194, 194);
   height: 100%;
   margin: 0;
@@ -14,14 +13,12 @@ html, body {
 }
 
 .left-side {
-  width: 100%;
   background: #0a6d7a;
   color: aliceblue;
 }
 
 .right-side {
-  width: 100%;
-  padding: 3%;
+  padding: 3% 0 2% 3%;
 }
 
 
@@ -38,7 +35,7 @@ html, body {
     height: 30px;
     background-color: #333;
     color: #f2f2f2;
-    padding: 0 0 0 30%;
+    padding:0;
   }
 
   .left-side {
@@ -240,7 +237,8 @@ html, body {
 /* Resposnsivo */
 @media only screen and (max-width: 767px) {
       html, body {
-        background: rgb(238, 225, 225);
+        width: 103%;
+        background: rgb(248, 245, 245);
         height: 100%;
         margin: 0;
         padding: 0;
@@ -256,7 +254,7 @@ html, body {
 
     .left-side {
       width: 100%;
-      background: #0a6d7a;
+      background: #358c97;
       color: aliceblue;
     }
 
@@ -333,14 +331,14 @@ html, body {
     .skill {
     width: 50%;
     height: 10px;
-    background-color: #f2f2f2;
+    background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
     }
 
     .skill-progress {
     height: 100%;
-    background-color:rgb(226, 170, 170);
+    background-color:rgb(247, 211, 211);
     }
 
     /* Contatos Links e Img*/
@@ -445,7 +443,7 @@ html, body {
 
     .slick-slider {
     width: 90%;
-    margin: 2% 12% 2% 10%;
+    margin: 2% 12% 2% 6%;
     background:  rgb(238, 225, 225);
     color:  #050505;
     }
