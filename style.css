@@ -58,6 +58,22 @@ html, body {
 
 
   /*LADO ESQUERDO  => CURSOS, SKILLS, ... */
+  #title{
+    padding-bottom: 15%;
+  }
+  .foto-e-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+  }
+  .minha-foto{
+    border-radius: 50%;
+    width: 150px; 
+    padding-top: 8%;
+  }
+
+
   .container-perfil, .aritle-contat, .aside-skills, .article-courses{
     width: 100%;  
     margin: 0;  
@@ -75,6 +91,31 @@ html, body {
   .subtitle-perfil, .section-text-perfil, .section-text-graduation, .article-links-contats, .aside-list-skills{
     padding: 5% 7% 5% 7%;
   }
+
+
+  /*SOBRE AS SKILLS*/
+.container-skill{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  > li{
+    font-size: 15px;
+  }
+}
+
+.skill {
+  width: 50%;
+  height: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color:rgb(226, 170, 170);
+}
 
   /* Contatos Links e Img*/
 .lista-contato {
