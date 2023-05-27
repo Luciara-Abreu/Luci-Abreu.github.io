@@ -1,12 +1,12 @@
 html, body  {
-  background: rgb(202, 194, 194);
-  height: 100%; /* Definir altura de html e body como 100% */
   margin: 0;
-  padding: 0;
+  background: rgb(202, 194, 194);
+  height: 181.3%; /* Definir altura de html e body como 100% */
 }
 .container {
-  min-height: 99.7vh; /* Definir a altura mínima do container como 100% da altura da viewport */
-  padding-bottom: 98%; /* Espaço para o footer */
+  width: 100%;
+  height: 77%;
+  padding-bottom: 4.95%;/* Espaço para o footer */
 }
 
 #title{
@@ -25,10 +25,10 @@ html, body  {
 
 .right-side {
   float: right;
-  width: 75%;
-  padding: 3%; 
   margin: 0;
+  width: 75%;
   height: auto;
+  padding: 3%; 
   position: relative;
   box-sizing: border-box; 
 }
@@ -46,10 +46,10 @@ html, body  {
 }
 
 .subtitle-perfil, .section-text-perfil, .section-text-graduation, .article-links-caontats, .aside-list-skills{
-  padding: 10% 7% 10% 7%;
+  padding: 5% 7% 5% 7%;
 }
 
-.container-perfil, .aritle-contat, .aside-skills{
+.container-perfil, .aritle-contat, .aside-skills, .article-courses{
   width: 100%;  
   margin: 0;
   display: flex;
@@ -58,9 +58,9 @@ html, body  {
 }
 
 .p-perfil-graduation{
-  width: 20%;  
+  width: 29%;  
   margin: 0;
-  padding: 0 15% 0 4%;
+  padding: 0 5% 0 4%;
 }
 
 .p-perfil, .p-contact, .p-skills{
@@ -86,12 +86,11 @@ html, body  {
   border-width: 1px;
 }
 
-
 .graduation, .notebook, .contat-handshake, .skills-piramide{
   width: 15%; 
   height: 10;
   margin: 0;
-  padding: 7% 0 7% 5%;
+  padding: 3% 0 3% 5%;
 }
 
 
@@ -151,31 +150,50 @@ html, body  {
 
 .social-media{
   width: 10%; 
-  height: 10; 
-  padding: 0;
-}
-.p-perfil-Work{
-  width: 50%;  
-  margin: 0;
-  padding: 0 0 0 1%;
+  height: 20%; 
 }
 
-.flag{
+.courses{
+  width: 100%;
+  height: 15%; 
+  background: #0a6d7a;
+}
+
+.flag{  
   width: 10%; 
-  height: 10; 
-  padding: 3% 0 0 0;
+  height: 550%;
+  padding: 0 0 0 2%;
+  float: left; 
+
 }
-.container-courses{
+.article-courses{
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-bottom: 3%;
+  align-self: center;
+  width: auto;
+  height: 4%;
+  margin: 0; 
+  padding: 3% 5% 3% 0;
+  background:#0a6d7a;
+  color: aliceblue;
 }
+
+.p-perfil-Work{
+  width: 25%;  
+  margin: 0;
+  padding: 0 0 0 3%; 
+}
+
+.p-courses {
+  width: 20%;
+  margin: 0;
+  padding: 0 3% 0 2%;
+}
+
 
 /* Estilizando o botão do Slick Carousel */
 .slick-prev,
 .slick-next {
-  background-color: #0a6d7a;
+  background-color: rgb(202, 194, 194);
   display: inline-block;
   padding: 10px 20px;
   border: none;
@@ -187,13 +205,20 @@ html, body  {
   transition: transform 0.3s ease;
 }
 
+.slick-slider {
+  width: 90%;
+  margin: 2% 5% 2% 2%;
+  background:#0a6d7a;
+  color: aliceblue;
+}
+
 .slick-prev:hover,
 .slick-next:hover {
   transform: scale(1.1);
 }
   
 .footer{
-  height: 30px;
+  height: auto;
   background-color: #333;
   color: #f2f2f2;
   padding: 0 0 0 30%;
