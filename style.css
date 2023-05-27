@@ -1,12 +1,12 @@
 html, body  {
   margin: 0;
   background: rgb(202, 194, 194);
-  height: 181.3%; /* Definir altura de html e body como 100% */
+  height: 174%; /* Definir altura de html e body como 100% */
 }
 .container {
   width: 100%;
-  height: 77%;
-  padding-bottom: 4.95%;/* Espaço para o footer */
+  height: 99.2%;
+  /* Espaço para o footer */
 }
 
 #title{
@@ -28,7 +28,7 @@ html, body  {
   margin: 0;
   width: 75%;
   height: auto;
-  padding: 3%; 
+  padding: 3% 3% 0% 3%;
   position: relative;
   box-sizing: border-box; 
 }
@@ -156,7 +156,7 @@ html, body  {
 .courses{
   width: 100%;
   height: 15%; 
-  background: #0a6d7a;
+  background: rgb(202, 194, 194)
 }
 
 .flag{  
@@ -193,7 +193,7 @@ html, body  {
 /* Estilizando o botão do Slick Carousel */
 .slick-prev,
 .slick-next {
-  background-color: rgb(202, 194, 194);
+  background-color:#0a6d7a;
   display: inline-block;
   padding: 10px 20px;
   border: none;
@@ -208,8 +208,8 @@ html, body  {
 .slick-slider {
   width: 90%;
   margin: 2% 5% 2% 2%;
-  background:#0a6d7a;
-  color: aliceblue;
+  background:rgb(202, 194, 194);
+  color:  #050505;
 }
 
 .slick-prev:hover,
