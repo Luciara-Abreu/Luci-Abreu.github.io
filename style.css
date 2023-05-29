@@ -13,189 +13,51 @@ html, body {
 }
 
 .left-side {
+  width: 25%;
+  height: auto;
   background: #0a6d7a;
   color: aliceblue;
 }
 
+
 .right-side {
   padding: 3% 0 2% 3%;
+  width: 75%;
+  background: rgb(202, 194, 194);
+  color:black;
 }
 
-
-/* Estilos responsivos */
-@media only screen and (min-width: 768px) {
-  .container {
-    flex-direction: row; /* Alteramos para uma direção de linha para exibir o conteúdo lado a lado */
-  }
-
-  .footer {
-    padding: 0;
-    text-align: center;
-    margin-top: auto;
-    height: 30px;
-    background-color: #333;
-    color: #f2f2f2;
-    padding:0;
-  }
-
-  .left-side {
-    width: 25%;
-    height: auto;
-    background: #0a6d7a;
-    color: aliceblue;
-  }
-
-  .right-side {
-    width: 75%;
-    background: rgb(202, 194, 194);
-    color:black;
-  }
-
-  .p-footer{
-    padding: 0;
-    margin: 0;
-  } 
-
-
-  /*LADO ESQUERDO  => CURSOS, SKILLS, ... */
-  #title{
-    padding-bottom: 15%;        
-  }
-  
-  /*Fim da firula */
-
-  .foto-e-name{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; 
-  }
-  .minha-foto{
-    border-radius: 50%;
-    width: 150px; 
-    padding-top: 8%;
-  }
-
-
-  .container-perfil, .aritle-contat, .aside-skills, .article-courses{
-    width: 100%;  
-    margin: 0;  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .p-perfil, .p-contact, .p-skills, .p-perfil-graduation{
-    width: 29%;  
-    margin: 0;
-    padding: 0 13% 0 4%;
-  }
-
-  .subtitle-perfil, .section-text-perfil, .section-text-graduation, .article-links-contats, .aside-list-skills{
-    padding: 5% 7% 5% 7%;
-  }
-
-
-  /*SOBRE AS SKILLS*/
-.container-skill{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.footer {
   padding: 0;
-  > li{
-    font-size: 15px;
-  }
+  text-align: center;
+  margin-top: auto;
+  height: 30px;
+  background-color: #333;
+  color: #f2f2f2;
+  padding:0;
 }
 
-.skill {
-  width: 50%;
-  height: 10px;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.skill-progress {
-  height: 100%;
-  background-color:rgb(226, 170, 170);
-}
-
-  /* Contatos Links e Img*/
-.lista-contato {
-  list-style: none;
+.p-footer{
   padding: 0;
-}
+  margin: 0;
+} 
 
-  /*LADO DIREITO => WORK EXPERIENCE*/
-.container-works, .article-courses{
+.foto-e-name{
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
-  padding-bottom: 3%;
+  width: 100%; 
 }
-
-.p-perfil-Work, .p-courses{
-  width: 35%;  
-  margin: 0;
-  padding: 0 0 0 3%; 
-}
-
-.linha-horizontal {
-  width: 45%; 
-  float: right;
-  margin: 0;
-  height: 1px;
-
-  display: block;
-  unicode-bidi: isolate;
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  overflow: hidden;
-  border-style: inset;
-  border-width: 1px;
-}
-
 .minha-foto{
   border-radius: 50%;
   width: 150px; 
   padding-top: 8%;
 }
+#title{
+    padding-bottom: 15%;        
+  }
 
-.graduation, .notebook, .contat-handshake, .skills-piramide{
-  width: 15%; 
-  height: 10;
-  margin: 0;
-  padding: 3% 0 3% 5%;
-}
-
-.li-fone, .li-whats, .li-mail, .li-git, .li-in{
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 3% 8% 0 0;
-}
-
-.fone, .whatsapp, .email, .git, .In{
-  width: 20px; 
-  height: 10; 
-  padding: 1% 5% 5% 0;
-}
-
-.a-fone, .a-whatsapp, .a-email, .a-git, .a-In {
-  color: aliceblue;
-  margin: 0;
-  padding: -20% 0 0 0;
-}
-
-.social-media, .flag{
-  width: 10%; 
-  height: 20%; 
-}
-
-/* Estilizando o botão do Slick Carousel */
+  /* Estilizando o botão do Slick Carousel */
 .slick-prev,
 .slick-next {
   background-color:#0a6d7a;
@@ -211,10 +73,10 @@ html, body {
 }
 
 .slick-slider {
-  width: 90%;
-  margin: 2% 5% 2% 2%;
-  background:rgb(202, 194, 194);
-  color:  #050505;
+    width: 90%;
+    margin: 2% 12% 2% 6%;
+    color: #050505;
+    font-size: 15px;
 }
 
 .slick-slide {
@@ -228,75 +90,18 @@ html, body {
   transform: scale(1.1);
   }
   
-}
 
-/* -----------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------*/
+  .fone, .whatsapp, .email, .git, .In{
+    width: 20px; 
+    height: 10; 
+    padding: 1% 5% 5% 0;
+  }
 
-/* Resposnsivo */
-@media only screen and (max-width: 767px) {
-      html, body {
-        width: 103%;
-        background: rgb(248, 245, 245);
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      padding-bottom: 0px;
+  .a-fone, .a-whatsapp, .a-email, .a-git, .a-In {
+    color: aliceblue;
+    margin: 0;
+    padding: -20% 0 0 0;
     }
-
-
-    .left-side {
-      width: 100%;
-      background: #358c97;
-      color: aliceblue;
-    }
-
-    .right-side {
-      width: 100%;
-      padding: 3%;
-    }
-
-
-    .footer {
-      margin:0;
-      height: 30px;
-      background-color: #333;
-      color: #f2f2f2;
-      font-size: 13px;
-      padding: 5px 0 0 33px;
-    }
-
-    .p-footer{
-      padding: 0;
-      margin: 0;
-    } 
-
-
-    /*Parte Verte-Topo  => CURSOS, SKILLS, ... */
-      #title{
-        padding-bottom: 15%;   
-      }
-      
-
-    .foto-e-name{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%; 
-    }
-    .minha-foto{
-      border-radius: 50%;
-      width: 150px; 
-      padding-top: 8%;
-    }
-
 
     .container-perfil, .aritle-contat, .aside-skills, .article-courses{
       width: 100%;  
@@ -312,47 +117,146 @@ html, body {
       padding: 0 13% 0 4%;
     }
 
-    .subtitle-perfil, .section-text-perfil, .section-text-graduation, .article-links-contats, .aside-list-skills, .experience{
-      padding: 3% 15% 5% 10%;
+    .subtitle-perfil, .section-text-perfil, .section-text-graduation, .article-links-contats, .aside-list-skills{
+      padding: 5% 7% 5% 7%;
     }
 
+      /*SOBRE AS SKILLS*/
+.container-skill{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  > li{
+    font-size: 14px;
+  }
+}
 
-    /*SOBRE AS SKILLS*/
-    .container-skill{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    > li{
-      font-size: 15px;
-    }
-    }
+.skill {
+  width: 50%;
+  height: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+  
 
-    .skill {
-    width: 50%;
-    height: 10px;
-    background-color: #fff;
-    border-radius: 5px;
-    overflow: hidden;
-    }
+.skill-progress {
+  height: 100%;
+  background-color:rgb(226, 170, 170);
+}
 
-    .skill-progress {
-    height: 100%;
-    background-color:rgb(247, 211, 211);
-    }
-
-    /* Contatos Links e Img*/
-    .lista-contato {
+  /* Contatos Links e Img*/
+  .lista-contato {
     list-style: none;
     padding: 0;
     }
 
-    /*LADO DIREITO => WORK EXPERIENCE*/
-    .container-works, .article-courses{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-bottom: 3%;
+  .container-works, .article-courses{
+      width: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+    .linha-horizontal {
+      width: 45%; 
+      float: right;
+      margin: 0;
+      height: 1px;
+  
+      display: block;
+      unicode-bidi: isolate;
+      margin-block-start: 0.5em;
+      margin-block-end: 0.5em;
+      margin-inline-start: auto;
+      margin-inline-end: auto;
+      overflow: hidden;
+      border-style: inset;
+      border-width: 1px;
+      }
+
+      .li-fone, .li-whats, .li-mail, .li-git, .li-in{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 3% 8% 0 0;
+      }
+
+      .graduation, .notebook, .contat-handshake, .skills-piramide{
+        width: 15%; 
+        height: 10;
+        margin: 0;
+        padding: 3% 0 3% 5%;
+      }
+      
+    
+/* ----------------------- Estilos responsivos  -----------------------*/
+/*Tela grande*/
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Alteramos para uma direção de linha para exibir o conteúdo lado a lado */
+  }
+
+.p-perfil-Work, .p-courses{
+  width: 35%;  
+  margin: 0;
+  padding: 0 0 0 3%; 
+}
+
+
+.social-media, .flag{
+  width: 10%; 
+  height: 20%; 
+}  
+}
+
+/* -----------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------*/
+
+/* Resposnsivo tela pequena */
+@media only screen and (max-width: 767px) {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+    .container {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding-bottom: 0px;
+    }
+
+    .left-side {
+      width: 100%;
+    }
+
+    .right-side {
+      width: 100%;  
+      padding: 3% 0 2% 0%;
+  }
+
+    .footer {
+      margin:0;
+      height: 30px;
+      background-color: #333;
+      color: #f2f2f2;
+      font-size: 13px;
+      padding: 5px 0 0 33px;
+    } 
+
+    /*ajustar depois */
+    .linha-horizontal {
+      width: 40%; 
+      }
+
+    .subtitle-perfil, .section-text-perfil, .section-text-graduation, .article-links-contats, .aside-list-skills, .experience{
+      margin: 4% 10% 5% 10%;
     }
 
     .p-perfil-Work{
@@ -374,24 +278,6 @@ html, body {
       visibility: visible;
     }
 
-
-    .linha-horizontal {
-    width: 40%; 
-    float: right;
-    margin: 0;
-    height: 1px;
-
-    display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
-    }
-
     .minha-foto{
     border-radius: 50%;
     width: 150px; 
@@ -400,65 +286,9 @@ html, body {
 
     .graduation, .notebook, .contat-handshake, .skills-piramide, .social-media, .flag {
     width: 15%; 
-    height: 10;
     margin: 0;
     padding: 3% 0 3% 8%;
-    }
-
-    .li-fone, .li-whats, .li-mail, .li-git, .li-in{
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 3% 8% 0 0;
-    }
-
-    .fone, .whatsapp, .email, .git, .In{
-    width: 20px; 
-    height: 10; 
-    padding: 1% 5% 5% 0;
-    }
-
-    .a-fone, .a-whatsapp, .a-email, .a-git, .a-In {
-    color: aliceblue;
-    margin: 0;
-    padding: -20% 0 0 0;
-    }
-
-
-    /* Estilizando o botão do Slick Carousel */
-    .slick-prev,
-    .slick-next {
-    background-color:#0a6d7a;
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #e0e0e0;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-    }
-
-    .slick-slider {
-    width: 90%;
-    margin: 2% 12% 2% 6%;
-    background:  rgb(238, 225, 225);
-    color:  #050505;
-    }
-
-    .slick-slide {
-    margin: 0;
-    padding-bottom: 2px;
-    }
-
-
-    .slick-prev:hover,
-    .slick-next:hover {
-    transform: scale(1.1);
-    }
-
+    } 
 }
 
 
