@@ -251,7 +251,6 @@ html, body {
       padding: 5px 0 0 0px;
     } 
 
-    /*ajustar depois */
     .linha-horizontal {
       width: 40%; 
       }
@@ -290,6 +289,12 @@ html, body {
     margin: 0;
     padding: 3% 0 3% 8%;
     } 
+
+    .slick-slider {
+      width: 90%;
+      margin: 3% 2% 2% 3%;
+      font-size: 12px;
+  }
 
   
 }
