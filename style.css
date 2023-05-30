@@ -116,7 +116,7 @@ html, body {
     }
 
     .subtitle-perfil, .section-text-perfil, .section-text-graduation, .article-links-contats, .aside-list-skills{
-      padding: 5% 7% 5% 7%;
+      padding: 5% 8% 25% 4.5%;
     }
 
       /*SOBRE AS SKILLS*/
@@ -256,7 +256,7 @@ html, body {
       }
 
     .subtitle-perfil, .section-text-perfil, .section-text-graduation, .article-links-contats, .aside-list-skills, .experience{
-      margin: 4% 10% 5% 10%;
+      padding: 5% 6% 10% 7.5%;
     }
 
     .p-perfil-Work{
