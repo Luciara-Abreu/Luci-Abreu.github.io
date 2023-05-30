@@ -74,16 +74,14 @@ html, body {
 
 .slick-slider {
     width: 90%;
-    margin: 2% 12% 2% 6%;
+    margin: 2% 12% 2% 0%;
     color: #050505;
     font-size: 15px;
 }
 
 .slick-slide {
-  margin: 0;
-  padding-bottom: 2px;
+  margin-bottom: 0.5% !important;
 }
-
 
 .slick-prev:hover,
 .slick-next:hover {
@@ -192,6 +190,9 @@ html, body {
         padding: 3% 0 3% 5%;
       }
       
+      .experience{
+        margin: 4% 7% 5% 0%;
+      }
     
 /* ----------------------- Estilos responsivos  -----------------------*/
 /*Tela grande*/
