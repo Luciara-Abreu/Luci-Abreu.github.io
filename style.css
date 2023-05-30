@@ -193,6 +193,15 @@ html, body {
       .experience{
         margin: 4% 7% 5% 0%;
       }
+
+      .p-perfil-Work, .p-courses{
+        width: 35%;  
+        margin: 0;
+        padding: 0 0 0 3%; 
+        font-size: 20px;
+        font-weight: bold;
+      }
+      
     
 /* ----------------------- Estilos responsivos  -----------------------*/
 /*Tela grande*/
@@ -201,11 +210,6 @@ html, body {
     flex-direction: row; /* Alteramos para uma direção de linha para exibir o conteúdo lado a lado */
   }
 
-.p-perfil-Work, .p-courses{
-  width: 35%;  
-  margin: 0;
-  padding: 0 0 0 3%; 
-}
 
 
 .social-media, .flag{
@@ -259,11 +263,11 @@ html, body {
       padding: 5% 6% 10% 7.5%;
     }
 
-    .p-perfil-Work{
+    .p-perfil-Work {
     width: 35%;  
     margin: 0;
     padding: 0 0 0 3%;
-    font-size: 18px;
+    font-size: 15px;
     }
 
     .p-courses {
@@ -271,10 +275,11 @@ html, body {
       width: 35%;  
       margin: 0;
       padding: 5% 0 0 3%; 
+      font-size: 15px;
     }
 
     .p-courses::before {
-      content: "CURSOS";
+      content: "CURSOS...";
       visibility: visible;
     }
 
